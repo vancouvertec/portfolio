@@ -676,27 +676,27 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
+            <form action="https://api.staticforms.xyz/submit" method="post" class="php-email-form">
+              <input type="hidden" name="accessKey" value="fcf56713-bb25-4799-b631-36b1d82a5077">
+              <div class="row">                
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome!" required>
+                  <input type="text" name="name" class="form-control" placeholder="Seu Nome!" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" required>
+                  <input type="email" class="form-control" name="email" placeholder="Seu E-mail" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+                <input type="text" class="form-control" name="subject" placeholder="Assunto" required>
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Sua Mensagem!" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+              <input type="hidden" name="redirectTo" value="https://rafaelferreira2312.github.io/portfolio">
+              <div class="my-3">                             
+                <div class="sent-message">Mensagem envia com sucesso!</div>
               </div>
-              <div class="text-center"><button type="submit">Enviar</button></div>
+              <div class="text-center"><button type="submit" value="Submit">Enviar</button></div>
             </form>
 
           </div>
